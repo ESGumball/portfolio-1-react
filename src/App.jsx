@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/pages/Header";
 import Home from "./components/pages/Home";
 import About from "./components/pages/About";
@@ -10,7 +10,7 @@ import Contact from "./components/pages/contact";
 
 const App = () => {
   return (
-    <BrowserRouter basename="/portfolio-1-react/">
+    <Router>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -20,7 +20,7 @@ const App = () => {
         <Route path="/experience" element={<Experience />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-    </BrowserRouter>
+    </Router>
   )
 }
 
