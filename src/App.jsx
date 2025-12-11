@@ -10,7 +10,7 @@ import Contact from "./components/pages/contact";
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/portfolio-1-react/">
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
